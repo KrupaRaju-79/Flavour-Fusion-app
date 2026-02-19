@@ -1,49 +1,65 @@
-# 🍽️ Flavour Fusion — AI-Driven Recipe Blogging
+# 🍳 Flavour Fusion - AI Recipe Blogging
 
-A Streamlit web app that uses **Google Gemini 2.5 Flash** to generate beautiful, detailed recipe blogs in seconds.
+Generate unique, customized recipes using **Google's Gemini AI**.
 
-## ✨ Features
-- Enter any recipe topic and word count
-- AI generates a full blog post (intro, ingredients, steps, tips, conclusion)
-- Entertains you with a programmer joke while generating 😄
-- Download the blog as a text file
+## Features
 
-## 🚀 Getting Started
+- 🤖 AI-powered recipe generation
+- 🎨 Beautiful, responsive UI
+- 📥 Download recipes as text files
+- 💾 Recipe history tracking
+- 🎯 Customizable word count (100-5000 words)
+- 8 cuisine types to choose from
 
-### 1. Clone the repo
+## Quick Start
+
+### Installation
+
 ```bash
-git clone https://github.com/YOUR_USERNAME/flavour-fusion.git
-cd flavour-fusion
-```
-
-### 2. Install dependencies
-```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Get your FREE Gemini API Key
-1. Visit 👉 https://aistudio.google.com/app/apikey
-2. Sign in with your Google account
-3. Click **"Create API Key"**
-4. Copy the key
+### Setup
 
-### 4. Run the app
+Create `.env` file with your Google API key:
+```
+GOOGLE_GEMINI_API_KEY=your-key-here
+```
+
+Get your key from [Google AI Studio](https://aistudio.google.com/app/apikey)
+
+### Run
+
 ```bash
 streamlit run app.py
 ```
 
-5. Paste your API key in the sidebar and start generating!
+Open `http://localhost:8501` in your browser.
 
-## 🛠️ Tech Stack
-- **Frontend:** Streamlit
-- **AI Model:** Google Gemini 2.5 Flash
-- **Language:** Python
+## Usage
 
-## 📁 Project Structure
+1. Enter a recipe topic (e.g., "Spicy Thai Curry")
+2. Choose a cuisine type or select "Any"
+3. Set desired word count
+4. Click "Generate Recipe"
+5. Download the generated recipe
+
+## Requirements
+
+- `streamlit` - Web framework
+- `google-generativeai` - Google Gemini API
+- `python-dotenv` - Environment variable management
+
+## Project Structure
+
 ```
-flavour-fusion/
-├── app.py              # Main Streamlit application
-├── requirements.txt    # Python dependencies
-├── .gitignore          # Files to exclude from Git
-└── README.md           # This file
+internship_smartBridge_long/
+├── README.md                 # This file
+├── Document/                 # Documentation files
+├── Project Files/
+│   ├── app.py               # Main Streamlit application
+│   └── requirements.txt      # Python dependencies
+└── Video/                    # Video resources
 ```
